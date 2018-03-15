@@ -1,5 +1,7 @@
 #從零開始配置vue+webpack
+
 ##涉及到的相關內容
+
 *	vue
 *	vue-loader
 *	babel
@@ -7,6 +9,7 @@
 *	webpack-dev-server
 
 ##相關依賴版本
+
 <pre>
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -23,6 +26,7 @@
 </pre>
 
 ##項目結構
+
 <pre>
 -bundle
 ----編譯後輸出部分
@@ -39,7 +43,9 @@
 </pre>
 
 ##簡略步驟
+
 ###依賴安裝部份
+
 在項目根目錄下，通過命令：
 
 `npm init`
@@ -59,6 +65,7 @@
 3.	安裝 `vue-loader` 後會提示需要手動安裝 `css-loader`, `vue-template-compiler` 兩個依賴。
 
 ###webpack配置部分
+
 <pre>
 const path = require('path');
 
@@ -104,6 +111,7 @@ module.exports = config;
 其他：...蠻神奇的，至少不需要不停的刷新。但是實際使用起來還是有不少問題，最大的問題大概就是編譯速度的問題。簡單的測試組件就能達到有感的等待時間，是否真的有用有待考量
 
 ###package.json開發命令部分
+
 <pre>
   "scripts": {
     "build": "webpack",
