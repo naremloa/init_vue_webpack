@@ -1,15 +1,12 @@
-#從零開始配置vue+webpack
-
-##涉及到的相關內容
-
+# 從零開始配置vue+webpack
+## 涉及到的相關內容
 *	vue
 *	vue-loader
 *	babel
 *	webpack
 *	webpack-dev-server
 
-##相關依賴版本
-
+## 相關依賴版本
 <pre>
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -25,8 +22,7 @@
   }
 </pre>
 
-##項目結構
-
+## 項目結構
 <pre>
 -bundle
 ----編譯後輸出部分
@@ -42,10 +38,8 @@
 -webpack.config.js
 </pre>
 
-##簡略步驟
-
-###依賴安裝部份
-
+## 簡略步驟
+### 依賴安裝部份
 在項目根目錄下，通過命令：
 
 `npm init`
@@ -64,8 +58,7 @@
 2.	webpack4下，執行webpack相關命令會需要手動安裝依賴 `webpack-cli`
 3.	安裝 `vue-loader` 後會提示需要手動安裝 `css-loader`, `vue-template-compiler` 兩個依賴。
 
-###webpack配置部分
-
+### webpack配置部分
 <pre>
 const path = require('path');
 
